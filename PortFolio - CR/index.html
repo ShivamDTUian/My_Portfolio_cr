@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/803677a14c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Internship</a></li>
+                    <li><a href="#services">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>ECE Engineer</p>
+                <h1><span id="line1"></span><br><span id="line2"></span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------ABOUT----------------------------------------------------->
+    
+    <div id="about">
+        
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/ph3.png" alt="About Image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me🎓</h1>
+                        <p>I am a final-year B.Tech student in Electronics and Communication Engineering at Delhi
+                            Technological University (DTU) with a strong passion for digital design, VLSI, and signal
+                            processing. My expertise lies in Verilog HDL, Python, and industry-standard tools like Xilinx
+                            Vivado and ModelSim.
+
+                            🔧 Through internships at DMRC and Indian Railways, I gained hands-on experience in
+                            telecommunication systems, cybersecurity, and train control systems, enhancing my ability to
+                            design and implement practical solutions in real-world scenarios.
+
+                            💡 I thrive on tackling challenges in digital electronics, system design, and embedded systems,
+                            and I am driven to create innovative solutions that make a difference in the electronics
+                            industry.
+
+                            🚀 Explore my portfolio to see how I combine technical proficiency and a passion for innovation
+                            to build impactful systems..
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')"> <i class="fa-solid fa-pen"></i>
+                                Skills</p>
+                            <p class="tab-links" onclick="opentab('internship')"><i class="fa-solid fa-briefcase"></i>
+                                Internship</p>
+                            <p class="tab-links" onclick="opentab('education')"> <i class="fa-solid fa-graduation-cap"></i>
+                                Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Language</span><br>Verilog HDL, MATLAB, C++, Python(NumPy, Pandas,
+                                    Matplotlib), MySQL, HTML/CSS.</li>
+                                <li><span>Technical Tools</span><br>LTSpice, Xilinx
+                                    ISE, Logisim, Proteus,
+                                    Virtuoso (Cadence), Power BI, Alteryx, Tableau, MS Office. </li>
+                                <li><span>Technologies</span><br>Digital Electronics, Analog Electronics, DSP
+                                    Embedded System, VLSI Design, Algorithm Analysis and Design, Machine Learning, Cyber
+                                    Security, DSA.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internship">
+                            <ul>
+                                <li><span>Jun'24 - Jul'24, 2 Months</span><br>Software Developer Intern | Ebyte Technologies
+                                    Inc.
+                                </li>
+                                <li><span>Dec'23 - Jan'24, 1 Month</span><br>Research Intern | Defence Research and
+                                    Development
+                                    Organisation (DRDO, CFEES LAB)</li>
+                                <li><span>Jun'23 - Jul'23, 2 Month</span><br>Training Intern | Ministry of Indian Railway |
+                                    (Signal and Telecommunication Department)</li>
+                                <li><span>Dec'22 – Jan'23, 1 Month</span><br>Training Intern | Delhi Metro Rail Corporation
+                                    |
+                                    Rolling Stock Department </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>B.Tech in ECE From Delhi Technological University.</li>
+                                <li><span>2020</span><br>Class 12th From CBSE Govt. Coed Sarvodaya Vidyalaya. </li>
+                                <li><span>2018</span><br>Class 10th From CBSE Govt. Coed Sarvodaya Vidyalaya.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-----------------------------Projects------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">MY PROJECTS</h1>
+            <div class="services-grid">
+
+                <div class="service-item">
+                    <i class="fa-solid fa-microchip"></i> <!---for icon---->
+                    <h2>4-Bit ALU Design</h2>
+                    <h3>Verilog Simulation & Breadboard Implementation</h3>
+                    <p>• Designed and simulated a 4-bit Arithmetic Logic Unit (ALU) using Verilog, performing arithmetic
+                        operations (addition, subtraction) and logic functions (AND, OR, XOR), validated with 20+ test
+                        cases.</p>
+                    <p>• Conducted functional verification and timing analysis using ModelSim, developing testbenches to
+                        ensure signal integrity and achieving a 10% reduction in timing delays.</p>
+                    <p>• Implemented and tested the ALU on a breadboard using 7400 series ICs, achieving seamless
+                        hardware functionality matching simulation results.</p>
+                    <a href="https://github.com/ShivamDTUian/4-BIT-ALU">
+                        <i class="fa-brands fa-github-alt"></i>
+                        <br>Learn more</a>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-traffic-light"></i> <!---for icon---->
+                    <h2>Traffic Light Controller</h2>
+                    <h3>Verilog HDL Simulation</h3>
+                    <p>• Designed and simulated a Traffic Light Controller using Verilog HDL, incorporating advanced
+                        state machine logic to manage seamless transitions between traffic signals and ensuring precise
+                        timing for optimal traffic regulation. </p>
+                    <p>• Developed and verified real-time operational logic using Xilinx Vivado, leveraging simulation
+                        tools to validate signal integrity and functional correctness under various traffic scenarios.
+                    </p>
+                    <p>• Engineered a robust and scalable solution by applying state transition techniques and timing
+                        optimization, demonstrating readiness for real-world traffic management systems.</p>
+                    <a href="https://github.com/ShivamDTUian/Traffic_light_controller_using_verilog"><i
+                            class="fa-brands fa-github-alt"></i> <br>Learn more</a>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-wave-square"></i> <!---for icon---->
+                    <h2>Noise Cancellation System</h2>
+                    <h3>Verilog HDL Simulation</h3>
+                    <p>• Designed and Simulated: Developed a real-time noise cancellation system using Verilog HDL,
+                        employing IIR and LMS adaptive filtering algorithms for effective noise reduction.
+                    </p>
+                    <p>• Technical Excellence: Demonstrated expertise in digital signal processing (DSP) by optimizing
+                        audio clarity through accurate simulations and HDL design techniques.
+                    </p>
+                    <p>• Key Skills: Verilog HDL, Digital Electronics, Adaptive Filtering, Signal Processing, EDA Tools
+                        (EDA Playground).
+                    </p>
+                    <a href="https://github.com/ShivamDTUian/Noise_Cancellation_System"><i
+                            class="fa-brands fa-github-alt"></i> <br>Learn more</a>
+                </div>
+
+                <div class="service-item">
+                    <i class="fa-brands fa-python"></i> <!---for icon---->
+                    <h2>Movie Recommendation System</h2>
+                    <h3>Machine Learning</h3>
+                    <p>• Engineered a content-based recommendation system using Python, Scikit-learn, and Pandas,
+                        leveraging TF-IDF for feature extraction and similarity scoring to deliver precise movie
+                        suggestions.</p>
+                    <p>• Integrated advanced machine learning algorithms with a responsive web application
+                        for real-time, user-centric recommendations, enhancing engagement and usability.</p>
+                    <p>• Optimized the system by analyzing user preferences and movie metadata, ensuring scalable
+                        performance and a seamless user experience.</p>
+                    <a href="https://github.com/ShivamDTUian/mrs_dtu"><i class="fa-brands fa-github-alt"></i> <br> Learn
+                        more</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------------------Portfolio---------------------------------- --->
+    <div id="portfolio">
+        <div class="contaner">
+            <h1 class="sub-title">My Internships</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/Intern 1.png" alt="Internship 1">
+                    <div class="label">EByte</div> <!-- Always visible text -->
+                    <div class="layer">
+                        <h3>Software Developer</h3>
+                        <p>• Collaborated on the software development lifecycle, contributing to requirement analysis,
+                            coding, and debugging for high-quality deliverables.</p>
+                        <p> ___ </p>
+                        <p>• Enhanced front-end and back-end integration for improved user experience and performance.
+                        </p>
+                        <p>___</p>
+                        <p>• Utilized MySQL to manage databases efficiently and optimized code quality through debugging
+                            solutions</p>
+
+                        <a href="https://drive.google.com/file/d/1XBBvhz-Tb1WpXWpSpppyeslld5MULOBQ/view?usp=drive_link"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Intern 2.png" alt="Internship 2">
+                    <div class="label">DRDO</div> <!-- Always visible text -->
+                    <div class="layer">
+                        <h3>Cybersecurity Analyst</h3>
+                        <p>• Engaged in cutting-edge research on cybersecurity threats, utilizing advanced techniques
+                            for
+                            threat detection and vulnerability assessment, enhancing understanding of emerging cyber
+                            risks.
+                        </p>
+                        <p>___</p>
+                        <p>• Contributed to the development and evaluation of innovative security protocols and defense
+                            mechanisms, improving strategies for protecting critical infrastructure and sensitive data.
+                        </p>
+
+                        <a href="https://drive.google.com/file/d/1OvwEhiPzMV7dlnM9ORHF3S5ziERbYsWh/view?usp=drive_link"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Intern 3.png" alt="Internship 3">
+                    <div class="label">Northern Railway</div> <!-- Always visible text -->
+                    <div class="layer">
+                        <h3>Research in Signal and Tellecommunication</h3>
+                        <p>• Worked on Mobile Train Radio Communication (MTRC), GSM-R technology, and satellite
+                            communication, optimizing networking in V-SAT and Hub Earth Station.</p>
+                        <p>____</p>
+                        <p>• Managed UTS/PRS Ticketing Network, FOIS systems, and analyzed Rake Management System (RMS)
+                            to enhance operational efficiency.</p>
+                        </p>
+                        <a href="https://drive.google.com/file/d/1qJPzs_lT7fFZI9XBwhjQYqgPRCYMTU1u/view?usp=drive_link"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Intern 4.jpg" alt="Internship ">
+                    <div class="label">DMRC</div> <!-- Always visible text -->
+                    <div class="layer">
+                        <h3>Train Control System </h3>
+                        <p>• Integrated and maintained ATP and ECUs for enhanced system diagnostics and safety.</p>
+                        <p>___</p>
+
+                        <p>• Optimized train-to-ground communication systems, improving signal integrity and network
+                            reliability.</p>
+                        <p>___</p>
+                        <p>• Collaborated on sensor interface solutions, ensuring smooth synchronization for efficient
+                            train operations.</p>
+                        <a href="https://drive.google.com/file/d/1h-tulavWBq20epEkaRHD0W9JmEJT6_P3/view?usp=sharing"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More </a>
+        </div>
+    </div>
+
+    <!----------------------------------------------CONTACT------------------------------------------------------>
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> shivam109.m@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> Phn. +917290888109</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shivam-maheshwari-1935a1278/overlay/contact-info/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/qr/IIECP3CE76LLE1"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        <a href="https://github.com/ShivamDTUian"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Shivam_M_wari"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1oEEHj2oqAHwXrVkILKcmNlxO74TAuNTE/view?usp=drive_link"
+                        download class="btn btn2">Download My CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright <i class="fa-regular fa-copyright"></i> Shivam Maheshwari. Craft with <i
+                class="fa-regular fa-heart"></i> and passion. All rights reserved.
+        </div>
+    </div>
+
+    <Script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </Script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwolfwsWCinbpI14g3F_WShaB1XDNg21juHn3zCVpLARcj_allyvZ7N8rOuz4K5FPkv/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Succesfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        const line1Text = "Hi, I'm ";
+        const nameText = "Shivam"; // Shivam will be in pink
+        const line2Text = "Maheshwari From Delhi";
+
+        const line1Element = document.getElementById('line1');
+        const line2Element = document.getElementById('line2');
+
+        let i = 0, j = 0, k = 0;
+
+        // Create a <span> for the pink text once
+        const pinkSpan = document.createElement('span');
+        pinkSpan.classList.add('pink');
+
+        function typeLine1() {
+            if (i < line1Text.length) {
+                line1Element.textContent += line1Text[i];
+                i++;
+                setTimeout(typeLine1, 100); // Continue typing "Hi, I'm "
+            } else if (k < nameText.length) {
+                // Add pinkSpan to line1Element if not already added
+                if (!line1Element.contains(pinkSpan)) {
+                    line1Element.appendChild(pinkSpan);
+                }
+                // Add letters of "Shivam" one by one
+                pinkSpan.textContent += nameText[k];
+                k++;
+                setTimeout(typeLine1, 100); // Continue typing "Shivam"
+            } else {
+                setTimeout(typeLine2, 500); // After Shivam, move to the next line
+            }
+        }
+
+        function typeLine2() {
+            if (j < line2Text.length) {
+                line2Element.textContent += line2Text[j];
+                j++;
+                setTimeout(typeLine2, 100);
+            }
+        }
+
+        typeLine1();
+
+    </script>
+</body>
+
+</html>
